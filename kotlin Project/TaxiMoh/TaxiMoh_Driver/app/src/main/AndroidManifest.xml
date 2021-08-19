@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uveous.taximohdriver">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"></uses-feature>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name="com.uveous.loopfoonpay.SignUp" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name="com.uveous.loopfoonpay.LoginActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.uveous.loopfoonpay.ForgotActivity" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+
+        <activity android:name="com.uveous.loopfoonpay.ProfileDetail" android:screenOrientation="portrait" />
+        <activity android:name=".Splash" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Choose_vehicle_yes_no" android:screenOrientation="portrait"/>
+        <activity android:name=".DriverAcccountSetupSteps" android:screenOrientation="portrait"/>
+        <activity android:name=".ProfilePhoto" android:screenOrientation="portrait"/>
+        <activity android:name=".driverLicense" android:screenOrientation="portrait"/>
+        <activity android:name=".VehicleInsurance" android:screenOrientation="portrait"/>
+        <activity android:name=".VehicleRegistration" android:screenOrientation="portrait"/>
+        <activity android:name=".BackgroundCheck" android:screenOrientation="portrait" />
+        <activity android:name=".TravelDashboard" android:screenOrientation="portrait"/>
+        <activity android:name=".Support" android:screenOrientation="portrait"/>
+        <activity android:name=".About" android:screenOrientation="portrait"/>
+        <activity android:name="com.uveous.loopfoonpay.Trip" android:screenOrientation="portrait"/>
+        <activity android:name="com.uveous.loopfoonpay.TripDetail" android:screenOrientation="portrait"/>
+        <activity android:name=".Mywallet" />
+        <activity android:name="com.uveous.loopfoonpay.RatingActivity" />
+        <activity android:name="com.uveous.loopfoonpay.Welcome.Onwelcomescreen"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.uveous.loopfoonpay.Welcome.welcomescreen" />
+        <activity android:name="com.uveous.loopfoonpay.EnterotpForgotActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.uveous.loopfoonpay.ConfirmForgotActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Driverwallet" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name=".MyService"
+            android:stopWithTask="false"
+       />
+    </application>
+
+</manifest>

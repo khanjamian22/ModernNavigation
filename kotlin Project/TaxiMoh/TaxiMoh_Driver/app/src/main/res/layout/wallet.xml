@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="#FAFAFA"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:title="Total Earning"
+        app:navigationIcon="@drawable/ic_keyboard_arrow_left_black_24dp"
+        app:titleTextColor="@color/black"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintTop_toTopOf="@+id/fragment_container1"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/purple_200"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dim_20"
+                android:paddingTop="@dimen/dim_20"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/walletscreenicon">
+
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/earning"
+                        android:textAllCaps="true"
+                        android:textStyle="normal"
+                        android:textColor="@color/green1"
+                        android:layout_marginTop="2dp"
+                        android:textSize="32sp"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL EARN"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/array"
+    android:layout_marginTop="20dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:gravity="left"
+        android:textSize="@dimen/dim_20"
+        android:textColor="#393939"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:text="PAYMENT HISTORY"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/filter"
+        app:srcCompat="@drawable/ic_baseline_filter_alt_24"
+        tools:ignore="VectorDrawableCompat">
+
+
+    </ImageView>
+
+</LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:id="@+id/recyclerview"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_bottom_dialog"
+        android:background="#FFFFFF"
+        android:elevation="16dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:outlineProvider="bounds"
+        android:clipToPadding="false"
+        >
+
+
+        <ListView
+            android:id="@+id/rv_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:choiceMode="singleChoice"
+            android:fadeScrollbars="false"
+            android:layout_marginBottom="5dp"
+            android:listSelector="#edf1f5"
+            />
+
+        <View
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D6D5D5"/>
+
+        <TextView
+            android:id="@+id/tv_bottom_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:text="Cancel"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:textColor="#FF5722"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

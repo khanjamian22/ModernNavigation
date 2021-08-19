@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:background="@drawable/top_corner_radius1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+      >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:visibility="visible"
+            android:textColor="@color/black"
+            android:text="Enter customer otp below." />
+
+
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginBottom="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_10"
+            android:singleLine="true"
+            android:drawablePadding="5dp"
+            android:textColorHint="@color/black"
+            android:hint="otp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgroundbtn1"
+            android:textColor="@android:color/white"
+            android:text="Submit"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_marginBottom="@dimen/dim_10"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>

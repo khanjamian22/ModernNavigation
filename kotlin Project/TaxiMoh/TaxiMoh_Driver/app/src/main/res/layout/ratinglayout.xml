@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_10"
+    android:id="@+id/showratings">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_person_24"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="@dimen/dim_30"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/name1"
+            android:text="NAme"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/phone1"
+            android:text="NAme"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:text="Give Rating"/>
+
+        <RatingBar
+            android:id="@+id/simpleRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_margin="@dimen/dim_20"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Your Comment(Optional)"/>
+
+        <EditText
+            android:id="@+id/et_post"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="top"
+            android:background="@drawable/back"
+            android:lines="4"
+            android:layout_margin="@dimen/dim_10"
+            android:padding="@dimen/dim_10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:id="@+id/submit1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="@dimen/dim_10"
+            android:layout_margin="@dimen/dim_30"
+            android:background="@drawable/backgroundbtn"
+            android:text="Submit">
+
+
+        </TextView>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
