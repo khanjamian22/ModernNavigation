@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".option.AboutActivity">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/customToolBar"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/customToolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/about_app"
+            android:layout_weight="1"
+            android:background="#f44336"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Your one stope solution for all information required on all DTC BUSES.
+\nFeatures:.\n1.
+DTC BUS TRACKER\n2.No Internet Required\n3.Simple,effective and accurate data\n    without use internet\n              Developed and Designed BY\n                          JMI CS GROUP"
+                android:textSize="20sp"
+                android:justificationMode="inter_word"
+                android:textColor="#fff"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_me"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="10dp"
+
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bus_logo"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="akramkhan12a12@gmail.com"
+                android:textColor="#000"
+                android:textSize="20dp"
+
+
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
