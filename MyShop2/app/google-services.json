@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037027724865",
+    "project_id": "online-shop-77c1a",
+    "storage_bucket": "online-shop-77c1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037027724865:android:f1896757c067ef7e9d00c0",
+        "android_client_info": {
+          "package_name": "com.techakram.Online_Shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037027724865-km3s008v1lh48fhljbs63v4ohh6armne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDglXio5uJVnv1LYq8pAJrXEEd0hgLPDAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037027724865-km3s008v1lh48fhljbs63v4ohh6armne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Shop</string>
+    <string name="title">Online Shop</string>
+    <string name="forget_password_detail">
+        Does not worry we just need your registred address its done
+    </string>
+    <string name="discription1"> All In One Online Shop</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="discription2"> **By continuing you agree that you
+        have read and accept our T and C and privacy policy..</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Not Signed In</string>
+    <string name="nav_header_subtitle">Email Address</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_search">Search</string>
+    <string name="action_notification">Notification</string>
+    <string name="action_cart">Cart</string>
+    <string name="open">openNavigation Drawer</string>
+    <string name="close"> close Navigation Drawer</string>
+
+    <string name="menu_mall">My Mall</string>
+    <string name="menu_order">My Orders</string>
+    <string name="menu_reward">My Rewards</string>
+    <string name="menu_cart">My Cart</string>
+    <string name="menu_wishlist">My WishList</string>
+    <string name="menu_account">My Account</string>
+    <string name="menu_logout">Logout</string>
+</resources>
