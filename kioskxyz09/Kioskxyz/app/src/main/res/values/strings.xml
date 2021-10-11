@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kioskxyz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--TODO Register-->
+    <string name="enteremail">Enter Email</string>
+    <string name="entername">Enter Name</string>
+    <string name="registerbutton">Register</string>
+    <string name="pleaseenetrname">Please Enter Name</string>
+    <string name="invalidname">Invalid Name</string>
+    <string name="pleaseeneteremail">Please Enetr Email</string>
+    <string name="invalidemail">Invalid Email</string>
+
+    <!--TODO network error-->
+    <string name="errorNoInternetConnection">No internet connection</string>
+</resources>

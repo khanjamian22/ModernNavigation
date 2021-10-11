@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#024197</color>
+    <color name="purple_500">#024197</color>
+    <color name="purple_700">#024197</color>
+    <color name="teal_200">#024197</color>
+    <color name="teal_700">#024197</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!--TODO main Color -->
+    <color name="main_dark_color">#024197</color>
+    <color name="main_light_color">#065EC4</color>
+    <color name="btn_color_green">#60DAAB</color>
+
+    <color name="strokGray">#EFEFEF</color>
+    <color name="txt_gray">#909090</color>
+    <color name="pure_white">#F9F9F9</color>
+    <!--TODO signUp color-->
+    <color name="skyblue">#3BB3EC</color>
+    <color name="selected_gray">#FBFAFA</color>
+
+</resources>
