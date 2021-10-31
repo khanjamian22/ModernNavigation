@@ -4,16 +4,17 @@ apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.1"
 //    compileSdkVersion 29
 //    buildToolsVersion '29.0.3'
 
     defaultConfig {
         applicationId "com.techakram.Online_Shop"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion 16
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -58,5 +59,6 @@ dependencies {
     //glide library............................
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.android.support:multidex:1.0.3'
 
 }
