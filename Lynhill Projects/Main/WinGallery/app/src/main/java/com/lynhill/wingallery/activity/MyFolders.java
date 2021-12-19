@@ -37,6 +37,16 @@ public class MyFolders extends AppCompatActivity {
         requestPermission();
         findViews();
         setSupportActionBar(toolbar);
+          //create tabs title
+        tabLayout.addTab(tabLayout.newTab().setText("Photos"));
+        tabLayout.addTab(tabLayout.newTab().setText("Videos"));
+
+        //attach tab layout with ViewPager
+        //set gravity for tab bar
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        tabLayout.setTabMode(TabLayout.MODE_FIXED);
+
+        /** to request read and write permissions*/
         if (Build.VERSION.SDK_INT >= 21) {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
@@ -47,14 +57,7 @@ public class MyFolders extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(this,getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
 
-        //create tabs title
-        tabLayout.addTab(tabLayout.newTab().setText("Photos"));
-        tabLayout.addTab(tabLayout.newTab().setText("Videos"));
 
-        //attach tab layout with ViewPager
-        //set gravity for tab bar
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-        tabLayout.setTabMode(TabLayout.MODE_FIXED);
 
         //change selected tab when viewpager changed page
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

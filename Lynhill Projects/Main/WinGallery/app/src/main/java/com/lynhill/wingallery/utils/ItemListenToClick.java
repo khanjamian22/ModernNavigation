@@ -8,6 +8,8 @@ import java.util.ArrayList;
 public interface ItemListenToClick {
     void onPicClicked(ShowImagesAdapter.MyPicViewHolder holder, int position, ArrayList<ShowImagesModel> pics,String tag);
     void onPicClicked(String pictureFolderPath,String folderName,String tag);
+
     void onImageClicked(int ImagePosition);
-    void onVideoClicked(int VideoPosition,String tag);
+
+    void onVideoClicked(int VideoPosition, String tag);
 }

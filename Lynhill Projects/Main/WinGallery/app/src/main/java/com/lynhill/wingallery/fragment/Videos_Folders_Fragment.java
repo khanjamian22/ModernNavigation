@@ -29,8 +29,7 @@ import java.util.ArrayList;
 
 public class Videos_Folders_Fragment extends Fragment implements ItemListenToClick {
     com.lynhill.wingallery.databinding.FragmentVideosFoldersBinding vvb;
-    private static final String ARG_TITLE = "title";
-    private String mTitle;
+
     ArrayList<ShowVideoFolders> videoFolders=new ArrayList<>();
     Videos_Folders_Adapter videos_folders_adapter;
     private RecyclerView mRecyclerView;
@@ -43,7 +42,7 @@ public class Videos_Folders_Fragment extends Fragment implements ItemListenToCli
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Bundle bundle = getArguments();
-//        mTitle = bundle.getString(ARG_TITLE);
+
     }
 
     @Override

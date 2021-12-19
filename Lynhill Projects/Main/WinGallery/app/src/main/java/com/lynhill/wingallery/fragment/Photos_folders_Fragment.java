@@ -28,30 +28,19 @@ import com.lynhill.wingallery.utils.ItemListenToClick;
 import java.util.ArrayList;
 
 public class Photos_folders_Fragment extends Fragment implements ItemListenToClick {
-    FragmentPhotosFoldersBinding pvb;
-    private static final String ARG_TITLE = "title";
-    private String mTitle;
-    Images_Folders_Adapter images_folders_adapter;
+
+    private Images_Folders_Adapter images_folders_adapter;
     private RecyclerView mRecyclerView;
     private ArrayList<ShowImageFoldersModel> imageFoldersModels=new ArrayList<>();
+
     public Photos_folders_Fragment() {
-        // Required empty public constructor
+
     }
-
-
-//    public static Photos_folders_Fragment getInstance(String title) {
-//        Photos_folders_Fragment fragment = new Photos_folders_Fragment();
-//        Bundle bundle = new Bundle();
-//        bundle.putString(ARG_TITLE, title);
-//        fragment.setArguments(bundle);
-//        return fragment;
-//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        Bundle bundle = getArguments();
-//        mTitle = bundle.getString(ARG_TITLE);
+
     }
 
     @Override
@@ -60,7 +49,6 @@ public class Photos_folders_Fragment extends Fragment implements ItemListenToCli
              View view= inflater.inflate(R.layout.fragment_photos_folders_, container, false);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),3);
         gridLayoutManager.setOrientation(LinearLayoutManager.VERTICAL); // set Horizontal Orientation
-       // pvb.ImagesFolderRecycler.setLayoutManager(gridLayoutManager);
         mRecyclerView=view.findViewById(R.id.Images_folder_recycler);
         mRecyclerView.setLayoutManager(gridLayoutManager);
 
@@ -75,8 +63,6 @@ public class Photos_folders_Fragment extends Fragment implements ItemListenToCli
         ArrayList<ShowImageFoldersModel> picfolders=new ArrayList<>();
         ArrayList<String> picPath=new ArrayList<>();
 
-        //Uri allImagesUri= MediaStore.Files.getContentUri("external");
-        //Uri allImagesUri= MediaStore.Files.getContentUri("external");
         Uri allImagesUri = android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
 
         String[] projection = {MediaStore.Images.ImageColumns.DATA, MediaStore.Images.Media.BUCKET_DISPLAY_NAME,};
