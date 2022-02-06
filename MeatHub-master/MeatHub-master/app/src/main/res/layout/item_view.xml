@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/product_sans_regular"
+        android:textColor="@color/profileEditTextColor"
+        android:paddingBottom="5sp"
+        android:paddingTop="5sp"
+        android:paddingLeft="8sp"
+        android:layout_height="wrap_content"/>
