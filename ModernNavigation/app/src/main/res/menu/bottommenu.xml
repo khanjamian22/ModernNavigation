@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#666666">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        app:cnb_textColor="#FF03DAC5"
+        app:cnb_iconColor="#FF03DAC5"
+        app:cnb_backgroundColor="#fff"
+        />
+    <item
+        android:id="@+id/bottom_notification"
+        android:title="Video"
+        android:icon="@drawable/ic_notification"
+        app:cnb_textColor="#FF03DAC5"
+        app:cnb_iconColor="#FF03DAC5"
+        app:cnb_backgroundColor="#fff"
+        />
+    <item
+        android:id="@+id/bottom_account"
+        android:title="Account"
+        android:icon="@drawable/ic_profile"
+        app:cnb_textColor="#FF03DAC5"
+        app:cnb_iconColor="#FF03DAC5"
+        app:cnb_backgroundColor="#fff"
+        />
+</menu>
